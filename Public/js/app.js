@@ -22,7 +22,7 @@ form.addEventListener('submit', (e) => {
     message1.textContent = 'Loading..'
     message2.textContent = ''
     
-const url = `http://localhost:3000/weather?address=${search}`;
+const url = `/weather?address=${search}`;
 fetch(url)
 .then((resp) => resp.json())
 .then((data) => {

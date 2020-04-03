@@ -6,6 +6,7 @@ const express = require('express');
 const hbs = require('hbs');
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 //Express path config
 const viewPath = path.join(__dirname, '../Templates/views');
@@ -95,6 +96,6 @@ app.get('/*', (req, res) => {
 })
 
 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log('app listening on port 3000');
 })
