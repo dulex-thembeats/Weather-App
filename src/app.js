@@ -27,8 +27,8 @@ app.get('', (req, res) => {
         name: 'Created by dulex'
     })
 })
-app.get('/about', (req, res) => {
-    res.render('about', {
+app.get('/About', (req, res) => {
+    res.render('About', {
         title: 'About Me',
         name: 'created by Dulex'
     })
