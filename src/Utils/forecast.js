@@ -8,7 +8,7 @@ const forecast = (lat, long, callback) => {
         } else if(response.body.error){
             callback("Error Fetching Data", undefined);
         } else {
-            callback(undefined, `it's  currently ${response.body.daily.data[0].summary} There's a ${response.body.currently.precipProbability} chance of rain`)
+            callback(undefined, `It's  currently ${response.body.daily.data[0].summary} The temperature is currently ${response.body.currently.temperature} degrees. There's a ${response.body.currently.precipProbability} chance of rain`)
         }
     })
 }
